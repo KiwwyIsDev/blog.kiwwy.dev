@@ -29,8 +29,11 @@ export default defineConfig({
 	site: "https://blog.kiwwy.dev/",
 	base: "/",
 	trailingSlash: "always",
+	devToolbar: {
+		enabled: false
+	},
 	server: {
-		port: 6002,
+		port: 6003,
 		host: true
 	},
 	integrations: [
@@ -159,6 +162,9 @@ export default defineConfig({
 	},
 	vite: {
 		server: {
+			allowedHosts: ['blog.kiwwy.dev', 'localhost']
+		},
+		preview: {
 			allowedHosts: ['blog.kiwwy.dev', 'localhost']
 		},
 		build: {
