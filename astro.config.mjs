@@ -26,9 +26,13 @@ import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-cop
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://fuwari.vercel.app/",
+	site: "https://blog.kiwwy.dev/",
 	base: "/",
 	trailingSlash: "always",
+	server: {
+		port: 6002,
+		host: true
+	},
 	integrations: [
 		tailwind({
 			nesting: true,
@@ -154,6 +158,9 @@ export default defineConfig({
 		],
 	},
 	vite: {
+		server: {
+			allowedHosts: ['blog.kiwwy.dev', 'localhost']
+		},
 		build: {
 			rollupOptions: {
 				onwarn(warning, warn) {

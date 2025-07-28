@@ -20,8 +20,29 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# deployment
 .vercel
 
+# package managers
 package-lock.json
 bun.lockb
 yarn.lock
+
+# PM2 ecosystem files
+ecosystem.config.cjs
+ecosystem.config.js
+
+# pagefind generated files
+pagefind/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+*.tmp
+*.temp
