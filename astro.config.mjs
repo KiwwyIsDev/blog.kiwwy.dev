@@ -33,7 +33,7 @@ export default defineConfig({
 		enabled: false
 	},
 	server: {
-		port: 6003,
+		port: 6000,
 		host: true
 	},
 	integrations: [
